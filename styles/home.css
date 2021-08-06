@@ -15,6 +15,13 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+a,
+a:visited {
+  color: black;
+  outline: none;
+  text-decoration: none;
+}
+
 .wrapper {
   width: 90%;
   margin: auto;
@@ -40,6 +47,7 @@ body {
   font-size: 0.9rem;
 }
 
+/* HEADER */
 .header__title {
   margin-top: 20%;
   margin-bottom: 1rem;
@@ -66,6 +74,28 @@ body {
   color: var(--google-green);
 }
 
+/* LUCK Buttton */
+.luckButton {
+  margin-top: 1rem;
+  background-color: #f8f9fa;
+  width: 150px;
+  height: 3rem;
+  text-align: center;
+  vertical-align: center;
+  font-size: 14px;
+  border-radius: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.luckButton--hover:hover {
+  border: 1px solid #9aa0a5;
+  border-radius: 0.3rem;
+  box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+}
+
+/* PSEUDO INPUT */
 .input {
   display: flex;
   width: 90%;
@@ -84,6 +114,7 @@ body {
   padding-left: 2rem;
 }
 
+/* CARD FORMAT 1 */
 .card {
   display: flex;
   flex-flow: row wrap;
