@@ -53,11 +53,11 @@ li {
 
 /* HEADER */
 .header__title {
-  margin-top: 20%;
+  margin-top: calc(100vh - 99vh + 2rem);
   margin-bottom: 1rem;
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   font-family: "Lato", sans-serif;
-  letter-spacing: -0.2rem;
+  letter-spacing: -0.3rem;
 }
 
 .header__a,
@@ -117,7 +117,7 @@ li {
 
 .input__text {
   margin: 0.8rem 0;
-  padding-left: 2rem;
+  padding-left: 1.5rem;
 }
 
 /* CARD FORMAT 1 */
@@ -227,3 +227,60 @@ img {
   cursor: pointer;
   color: var(--google-blue);
 }
+
+@media all and (min-width: 550px) {
+  [class*="card"] {
+    display: none;
+    visibility: none;
+  }
+  .wrapper {
+    width: 100%;
+  }
+  .header {
+    flex-basis: 100%;
+  }
+  .input {
+    flex-basis: 75%;
+  }
+
+  .luckButton {
+    flex-basis: 200px;
+  }
+  /* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 32px;
+  }
+
+  .footer__copy {
+    margin: 0;
+  }
+
+  .footer__list {
+    width: 20%;
+    justify-content: end;
+    margin-right: 56px;
+  }
+
+  .footer__icon {
+    margin-right: 1rem;
+  }
+}
+
+/* @media all and (min-width: 768px) {
+  [class*="card"] {
+    display: none;
+    visibility: none;
+  }
+  .input {
+    flex-basis: 50%;
+  }
+
+  .luckButton {
+    flex-basis: 25%;
+  }
+} */
