@@ -6,6 +6,9 @@
   --google-red: #ea4435;
   --google-yellow: #fbbd03;
   --google-green: #33a852;
+  --gray-text: #9aa0a5;
+  background-color: #f2f2f2;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -48,7 +51,6 @@ li {
 
 .nav__item {
   list-style-type: none;
-  font-size: 0.9rem;
 }
 
 /* HEADER */
@@ -203,31 +205,6 @@ img {
   border-radius: 1rem;
 }
 
-.footer {
-  width: 100%;
-  background-color: #f2f2f2;
-  padding: 1rem 0rem 2rem 0rem;
-}
-
-.footer__copy {
-  text-align: center;
-  margin: 1rem 0 2rem 0;
-  color: #878b8e;
-  font-size: 14px;
-}
-
-.footer__list {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.footer__icon--hover:hover {
-  cursor: pointer;
-  color: var(--google-blue);
-}
-
 @media all and (min-width: 550px) {
   [class*="card"] {
     display: none;
@@ -247,40 +224,4 @@ img {
     flex-basis: 200px;
   }
   /* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
-  .footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    justify-content: space-between;
-    padding: 16px 32px;
-  }
-
-  .footer__copy {
-    margin: 0;
-  }
-
-  .footer__list {
-    width: 20%;
-    justify-content: end;
-    margin-right: 56px;
-  }
-
-  .footer__icon {
-    margin-right: 1rem;
-  }
 }
-
-/* @media all and (min-width: 768px) {
-  [class*="card"] {
-    display: none;
-    visibility: none;
-  }
-  .input {
-    flex-basis: 50%;
-  }
-
-  .luckButton {
-    flex-basis: 25%;
-  }
-} */

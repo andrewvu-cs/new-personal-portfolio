@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+.gray-text {
+  color: var(--gray-text);
+}
+header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  background-color: white;
+}
+
+.header__title {
+  font-size: var(--h1);
+  letter-spacing: -0.2rem;
+  padding: 1rem 0;
+  margin: 0;
+}
+
+.input {
+  box-shadow: 0 7px 20px -10px rgba(150, 170, 180, 0.6);
+}
+.input__button,
+.input__text {
+  margin: 0.5rem 0;
+  padding: 0 0.5rem;
+}
+
+.nav {
+  width: 100%;
+  /* padding: 0.1rem 0.1rem; */
+}
+
+.nav__list {
+  padding: 0rem 1rem;
+}
+
+/* GRID SYSTEM */
+
+main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  --columns: 16;
+}
+
+section {
+  --width: 16;
+  --initialbasis: calc(var(--width) / var(--columns) * 100%);
+  --gap-constant: 0.3%;
+  --gap: calc((var(--columns) - var(--width)) * var(--gap-constant));
+  flex-basis: calc(var(--initialbasis) - var(--gap));
+}
+
+.card {
+  background-color: white;
+  border-radius: 0rem;
+  margin: 0.3rem 0;
+}
+.card__title {
+  flex-basis: 100%;
+  margin: 0;
+  padding-top: 1rem;
+}
+
+.card__subtitle {
+  flex-basis: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.card__linkout {
+  border-top: 1px solid #9aa0a5;
+  border-bottom: 1px solid #9aa0a5;
+  width: 100%;
+}
